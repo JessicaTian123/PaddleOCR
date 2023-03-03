@@ -26,50 +26,7 @@ num = 25
 str_1 = ''
 str_2 = ''
 j = count + 1
-# 遍历每一行语句
-# while(count + 1 < len(lines)):
-#     j = count + 1
-#     position_i = lines[count]['points']
-#     position_j = lines[j]['points']
-#     # 两行语句横纵坐标中点
-#     h_i = (position_i[1][1] + position_i[2][1]) / 2
-#     h_j = (position_j[1][1] + position_j[2][1]) / 2
-#     r_i = (position_i[0][0] + position_i[1][0]) / 2
-#     r_j = (position_j[0][0] + position_j[1][0]) / 2
-#     if(abs(r_i-r_j) < 10 and (h_j - h_i) < num):
-#         while (lines[count]['transcription'][-1:] != ';') and (count + 1 < len(lines)):
-#             # 当在多行中间遇到Yes或No时
-#             if(lines[j]['transcription'] == 'Y' or lines[j]['transcription'] == 'N' or lines[j]['transcription'] == 'Yes' or lines[j]['transcription'] == 'No'):
-#                 list_1.insert(index, lines[count])
-#                 index = index + 1
-#                 j = count + 2
-#             else:
-#                 str_1 = lines[count]['transcription'] + lines[j]['transcription']
-#                 lines[count]['transcription'] = str_1
-#                 #             重新计算位置
-#                 i = lines[count]['points'][0][0] + lines[count]['points'][1][0] - lines[count]['points'][0][0] + lines[j]['points'][1][0] - lines[j]['points'][0][0]
-#                 lines[count]['points'][1][0] = i
-#                 m = lines[count]['points'][3][0] + lines[count]['points'][2][0] - lines[count]['points'][3][0] + lines[j]['points'][2][0] - lines[j]['points'][3][0]
-#                 lines[count]['points'][2][0] = m
-#                 #             将合并后的字典插入列表中
-#                 #             list_1.insert(index, copy.deepcopy(lines[j]))
-#                 #             index = index + 1
-#                 j = j + 1
-#                 if (lines[count]['transcription'][-1:] == ';' and count + 1 < len(lines)):
-#                     list_1.insert(index, copy.deepcopy(lines[count]))
-#                     index = index + 1
-#                     count = count + 1
-#                     break
-#     elif(lines[count]['transcription'] == 'Y' or lines[count]['transcription'] == 'N' or lines[count]['transcription'] == 'Yes' or lines[count]['transcription'] == 'No'):
-#         list_1.insert(index, lines[count])
-#         index = index + 1
-#         count = count + 1
-#     elif (lines[count]['transcription'] == 'NO;'):
-#         count = count + 1
-#     else:
-#         list_1.insert(index, lines[count])
-#         index = index + 1
-#         count = count + 1
+遍历每一行语句
 while(count + 1 < len(lines)):
     # j = count + 1
     position_i = lines[count]['points']

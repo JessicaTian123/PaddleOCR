@@ -1,0 +1,5 @@
+新建一个虚拟环境
+在虚拟环境中下载paddlepaddle
+在虚拟环境中下载requirements.txt里面的内容即可
+
+运行整个程序：python predict_system.py --image_dir="G:/PaddleOCR/doc/imgs/2.jpg" --det_model_dir="G:/PaddleOCR/ch_PP-OCRv3_det_infer/" --rec_model_dir="G:/PaddleOCR/ch_PP-OCRv3_rec_infer/" --rec_char_dict_path="G:/PaddleOCR/ppocr/utils/ppocr_keys_v1.txt" --use_angle_cls=false --use_gpu=false
